@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    background: linear-gradient(to right, rgb(41, 193, 244), rgb(244, 244, 135))
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.nav {
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.citiesContainer {
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    padding: 0px 100px 0px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: 650px;
+    justify-content: space-between;
+}
+
+.cityCard__heading {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.cityCard {
+    width: 400px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgb(202, 230, 248);
+    box-shadow: 10px 10px 5px rgb(67, 84, 106);
+}
+
+.cardImg {
+    width: 250px;
+    height: 300px;
+    margin-left: 50px;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #fff;
+    border-bottom-color: #092fef;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 0.7s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    background-color: rgb(153, 198, 243);
+    margin-top: 30px;
+}

@@ -79,6 +79,10 @@ h1 {
     border: none;
 }
 
+.cardHeading {
+    text-align: center;
+}
+
 .weatherCard {
     width: 450px;
     height: 300px;    
@@ -86,12 +90,11 @@ h1 {
     display: flex;
     align-self: center;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     background-color: white;
     border-radius: 15px;
     box-shadow: 10px 10px 5px rgb(67, 84, 106);
-    margin-top: 300px;
+    margin-top: 270px;
 }
 
 li {

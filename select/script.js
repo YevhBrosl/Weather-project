@@ -71,6 +71,7 @@ try {
         const weatherCard = document.createElement('div')
         weatherCard.classList.add('weatherCard')
         const cardHeading = document.createElement('h2')
+        cardHeading.classList.add('cardHeading')
         cardHeading.textContent = 'Current weather'
         const weatherList = document.createElement('ul')
         const values = [`Temperature: ${temperature} ${current_weather_units.temperature}`, `Windspeed: ${windspeed} ${current_weather_units.windspeed}`, `${decodeWeather(weathercode)}`];
